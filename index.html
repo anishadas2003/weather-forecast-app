@@ -4,21 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather Forecast App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+
   <main class="card">
-    <h1>Weather Forecast</h1>
+    <div id="mascot" class="mascot"></div>
+
+    <h1>Sky Buddy <span class="sparkle">&#10024;</span></h1>
+    <p class="tagline">your cheerful little weather friend</p>
 
     <form id="search-form">
       <input
         type="text"
         id="city-input"
-        placeholder="Enter city name..."
+        placeholder="Where are you? (e.g. Bhubaneswar)"
         autocomplete="off"
         required
       />
-      <button type="submit">Get Weather</button>
+      <button type="submit">
+        <span>Peek outside</span>
+      </button>
     </form>
 
     <div id="status"></div>
